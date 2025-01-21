@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="x-icon" href="assets/VET.png">
+        <title>Boundless Online Tuition - About Us</title>
+        <link rel="stylesheet" href="CSSOnly/style2.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="top-bar">
+                <nav class="nav-bar">
+                    <a href="index.php"><img src="assets/VETFinal.png" class="logo" alt="User profile"></a>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="Loginform.php">Log In</a></li>
+                    
+                    </ul>
+                    
+                </nav>
+            </div>
+        </header>
+        <h1 class="center"><font face ="arial" color ="white" size="7"><i>About Us</i></font></h1>
+        <img src="assets/AboutMe.png" class="vam-adjustment" alt="Vission and Mission image" style="border: 2px solid white;">
+        <div class="table-container">
+            <div class="table-box">
+                <div class="left-side">
+                    <hr>
+                    <h3>Mission</h3>
+                    <hr>
+                    <h3>Vission</h3>
+                    <hr>
+                </div>
+                <div class="right-side">
+                    <h3>Giving Opportunity for Everyone to track their vehicle expenses</h3>
+                    <h3>Creating a Website that easier to track vehicle expenses</h3>
+                </div>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="team-title">
+                <h1>Meet the Developer</h1>
+                <h2>The person who created this website</h2>
+            </div>
+            <div class="team-box">
+                <div class="team-row">
+                    <div class="team-col">
+                        <img src="assets/Aniq.jpg" class="team-image">
+                        <h3>Aniq Azfar</h3>
+                        <p>D032210216</p>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+        </div>
+        <script>
+            document.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (window.scrollY > 0) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        </script>
+    </body>
+    <footer>
+        <hr>
+        <div class="bottom-content">
+            <div id="about-us" class="about-us">
+                <h3>About us</h3>
+                <hr>
+                <a href="aboutus.html"><p>About Us</p></a>
+            </div>
+            <div id="classes" class="classes">
+                <h3>Login or Register</h3>
+                <hr>
+                <a href="Loginform.php"><p>Login Here</p></a>
+                
+            </div>
+            <div id = "social-media" class="social-media">
+                <h3>Follow us:</h3>
+                <hr>
+                <a href="" target="_blank" title="Go to my facebook website">
+                    <img src="assets/facebook.png" width="20%" alt="facebook-icon">
+                </a>
+                <a href="" target="_blank" title="Go to my instagram website">
+                    <img src="assets/instagram.png" width="20%" alt="instagram-icon">
+                </a>
+                <a href="" target="_blank" title="Go to my twitter website">
+                    <img src="assets/twitter.png" width="20%" alt="twitter-icon">
+                </a>
+                <a href="" target="_blank" title="Go to my personal Youtube website">
+                    <img src="assets/youtube.png" width="20%" alt="youtube-icon">
+                </a>
+            </div>
+        </div>
+        <div class="second-bottom-content">
+            <h6 class="copyright">Copyright @  Vehicle Management System (Aniq Azfar) <?php echo date("Y"); ?></h6>
+            <!-- <h6 class="policy">
+                <a href="Terms-of-Service.php">Terms of service</a>
+                <strong> | </strong>
+                <a href="Privacy-Policy.php">Privacy Policy</a>
+                <strong> | </strong>
+                <a href="Refund-Policy.php">Refund Policy</a>
+            </h6> -->
+        </div>
+    </footer>
+</html>
